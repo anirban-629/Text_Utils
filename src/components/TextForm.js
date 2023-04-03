@@ -29,6 +29,7 @@ export default function TextForm(props) {
   };
   const handleOnChange = (textOnScreen) => {
     console.log("changed");
+    console.log(textOnScreen.target.value);
     setText(textOnScreen.target.value);
     setTextareaText(textOnScreen.target.value);
   };
